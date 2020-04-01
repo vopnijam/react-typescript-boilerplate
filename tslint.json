@@ -1,0 +1,79 @@
+{
+  "extends": [
+    "tslint:all",
+    "tslint-react-hooks"
+  ],
+  "rulesDirectory": [
+    "tslint-consistent-codestyle"
+  ],
+  "rules": {
+    "align": true,
+    "arrow-parens": true,
+    "arrow-return-shorthand": [true, "multiline"],
+    "await-promise": true,
+    "ban-comma-operator": true,
+    "ban-ts-ignore": false,
+    "binary-expression-operand-order": true,
+    "class-name": true,
+    "comment-format": false,
+    "completed-docs": false,
+    "curly": [true, "ignore-same-line"],
+    "deprecation": true,
+    "encoding": true,
+    "eofline": true,
+    "file-name-casing": [true, "camel-case"],
+    "import-spacing": true,
+    "indent": [true, "spaces", 2],
+    "invalid-void": false,
+    "linebreak-style": [true, "LF"],
+    "match-default-export-name": false,
+    "max-classes-per-file": [true, 1],
+    "max-line-length": [true, 100],
+    "member-ordering": false,
+    "newline-per-chained-call": false,
+    "no-conditional-assignment": true,
+    "no-console": true,
+    "no-debugger": true,
+    "no-default-export": false,
+    "no-empty": true,
+    "no-empty-interface": false,
+    "no-floating-promises": true,
+    "no-implicit-dependencies": false,
+    "no-import-side-effect": true,
+    "no-inferred-empty-object-type": true,
+    "no-magic-numbers": false,
+    "no-null-keyword": true,
+    "no-require-imports": true,
+    "no-string-literal": true,
+    "no-submodule-imports": false,
+    "no-this-assignment": true,
+    "no-unbound-method": true,
+    "no-use-before-declare": false,
+    "no-unsafe-any": true,
+    "no-unused": true,
+    "no-var-keyword": true,
+    "only-arrow-functions": true,
+    "ordered-imports": [
+      true,
+      {
+        "import-sources-order": "case-insensitive",
+        "named-imports-order": "case-insensitive"
+      }
+    ],
+    "quotemark": [true, "single", "jsx-double"],
+    "react-hooks-nesting": {
+      "severity": "warning",
+      "options": {}
+    },
+    "strict-boolean-expressions": false,
+    "strict-string-expressions": false,
+    "typedef": false,
+    "variable-name": [
+      true,
+      "allow-leading-underscore",
+      "allow-pascal-case",
+      "ban-keywords",
+      "check-format"
+    ]
+  }
+}

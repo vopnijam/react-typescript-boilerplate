@@ -1,0 +1,81 @@
+{
+  "name": "react-typescript-boilerplate",
+  "description": "A React UI leveraging TypeScript, React, Redux, Redux-Sagas, Styled-Components, and Webpack",
+  "version": "1.0.0",
+  "private": true,
+  "homepage": "https://yourhomepage.ca",
+  "main": "index.js",
+  "scripts": {
+    "build": "cross-env webpack -p --progress --colors",
+    "start": "cross-env NODE_ENV=development NODE_PATH=app webpack-dev-server --mode development --progress --colors --display-error-details",
+    "lint": "tslint -p \"tsconfig.json\" -c \"tslint.json\"",
+    "lint:staged": "lint-staged",
+    "update": "ncu -x react-text-mask"
+  },
+  "lint-staged": {
+    "*.ts": [
+      "yarn lint"
+    ],
+    "*.tsx": [
+      "yarn lint"
+    ]
+  },
+  "pre-commit": "lint:staged",
+  "devDependencies": {
+    "@types/history": "4.7.5",
+    "@types/html-webpack-plugin": "3.2.2",
+    "@types/lodash.isequal": "4.5.5",
+    "@types/react": "16.9.31",
+    "@types/react-dom": "16.9.6",
+    "@types/react-redux": "7.1.7",
+    "@types/react-router": "5.1.5",
+    "@types/react-router-dom": "5.1.3",
+    "@types/react-text-mask": "5.4.6",
+    "@types/redux-actions": "2.6.1",
+    "@types/styled-components": "5.0.1",
+    "@types/webpack": "4.41.10",
+    "@types/webpack-cleanup-plugin": "0.5.2",
+    "cross-env": "7.0.2",
+    "file-loader": "6.0.0",
+    "html-webpack-plugin": "4.0.4",
+    "husky": "4.2.3",
+    "lint-staged": "10.1.1",
+    "redux-devtools-extension": "2.13.8",
+    "ts-loader": "6.2.2",
+    "ts-node": "8.8.1",
+    "tsconfig-paths-webpack-plugin": "3.2.0",
+    "tslint": "6.1.0",
+    "tslint-consistent-codestyle": "1.16.0",
+    "tslint-react-hooks": "2.2.2",
+    "typescript": "3.8.3",
+    "typescript-plugin-styled-components": "1.4.4",
+    "url-loader": "4.0.0",
+    "webpack": "4.42.1",
+    "webpack-cleanup-plugin": "0.5.1",
+    "webpack-cli": "3.3.11",
+    "webpack-dev-server": "3.10.3",
+    "webpack-pwa-manifest": "4.2.0"
+  },
+  "dependencies": {
+    "axios": "0.19.2",
+    "date-fns": "2.11.1",
+    "lodash.isequal": "4.5.0",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "react-redux": "7.2.0",
+    "react-router": "5.1.2",
+    "react-router-dom": "5.1.2",
+    "react-text-mask": "5.4.1",
+    "redux": "4.0.5",
+    "redux-actions": "2.6.5",
+    "redux-saga": "1.1.3",
+    "styled-components": "5.0.1",
+    "text-mask-addons": "3.8.0",
+    "ts-dedent": "1.1.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  }
+}
